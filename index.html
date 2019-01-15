@@ -16,6 +16,12 @@
     <script src="https://code.jquery.com/qunit/qunit-1.18.0.js"></script>
 
     <script>
+    function getChange (totalPayable, cashPaid) {
+    return [1, 20, 10, 5];    // random output
+      };
+    </script>
+
+    <script>
     test('getChange(215, 300) should return [50, 20, 10, 5]', function(assert) {
     var result = getChange(215, 300); // expect an array containing [50,20,10,5]
     var expected = [50, 20, 10, 5];
@@ -33,14 +39,6 @@
       var expected = [200, 100, 50, 20, 10, 5, 2, 1];
       assert.deepEqual(result, expected);
     });
-    </script>
-
-    <script>
-    test('getChange(1,1) should equal [] - an empty array', function(assert) {
-      var result = getChange(1, 1); //no change/coins just an empty array
-      var expected = [];
-      assert.deepEqual(result, expected);
-    }); // use deepEqual for arrays see: https://api.qunitjs.com/deepEqual/
 
     </script>
   </body>
