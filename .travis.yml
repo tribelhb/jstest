@@ -3,5 +3,3 @@ node_js:
   - "10"
 install:
   - npm install -g codecov
-script:
-  - codecov
