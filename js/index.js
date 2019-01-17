@@ -1,2 +1,3 @@
 
-document.write(getChange (5, 5));
+document.write("The sum of 5 + 14 is ");
+document.write(sum(5, 14));

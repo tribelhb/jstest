@@ -5,10 +5,11 @@
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {
+    "codecov": "^3.1.0",
     "jest": "^23.6.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest && codecov --token=6a67f096-1ad1-4614-bd5f-27d601a39e7a",
     "start": "node server.js"
   },
   "repository": {
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/tribelhb/jstest/issues"
   },
-  "homepage": "https://github.com/tribelhb/jstest#readme"
+  "homepage": "https://github.com/tribelhb/jstest#readme",
+"jest": {
+  "coverageDirectory": "./coverage/",
+  "collectCoverage": true
+}
 }
