@@ -18,7 +18,13 @@ http.createServer( function (request, response) {
                               // HTTP Status: 404 : NOT FOUND
                               // Content Type: text/plain
                               response.writeHead(404, {'Content-Type': 'text/html'});
-                              } else {
+                              }
+                              else if (request.url.indexOf(".css") !== -1)
+                              {
+                              response.writeHead(200, {'Content-Type' : 'text/css'});
+                              response.write(data.toString());
+                              }
+                              else {
                               //Page found
                               // HTTP Status: 200 : OK
                               // Content Type: text/plain
