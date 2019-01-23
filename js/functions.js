@@ -38,4 +38,4 @@ function main()
     $("#button").click(checkVegan);
     $("#dropbtncontent").on('click', selMonth);
 }
-$(document).ready(main);
+
