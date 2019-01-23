@@ -39,3 +39,8 @@ function main()
     $("#dropbtncontent").on('click', selMonth);
 }
 
+module.exports = {
+checkVegan:checkVegan,
+sum:sum,
+selMonth:selMonth
+};
