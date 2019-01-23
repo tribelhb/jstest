@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "jest && codecov --token=6a67f096-1ad1-4614-bd5f-27d601a39e7a",
-    "start": "node server.js"
+    "start": "node js/server.js"
   },
   "repository": {
     "type": "git",
