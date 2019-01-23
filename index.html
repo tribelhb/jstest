@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
     <script src="js/functions.js"></script>
     <head>
         <meta charset="UTF-8">
@@ -9,11 +11,68 @@
     </head>
     
     <body>
-        Hello World!<BR>
+        
+        <div>
+        <h1>Cheesecake Order Form</h1> <!-- Create main header for page -->
+        
+        <!-- Add specified cheesecake image and set to appropriate size -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"                 alt="wikimedia_cheesecake"width=212 height=212/>
+        
+        <br/><p>Quantity Topping</p> <!-- Add subheader beneath image -->
+        
+        <!-- The following table contains the drop down menu (to select quantity)
+         and the radio buttons (to select topping flavor). The table is used
+         to place the two forms side-by-side. -->
+        <table id="table">
+            <!-- The following creates the drop down (quantity selection) item -->
+            <td id="dropDown">
+                <select>
+                    <option value="1">1</option> <!-- Set the first option to read "1" -->
+                    <option value="2">2</option> <!-- Set the second option to read "2" -->
+                    <option value="3">3</option> <!-- Set the third option to read "3" -->
+                </select>
+            </td>
+            <!-- The following creates the radio buttons (topping selection) item -->
+            <td id="radioButtons">
+                <input type="radio" name="Topping" checked/>Plain<br/> <!-- Set first option to read "Plain" (checked by default) -->
+                <input type="radio" name="Topping"/>Cherry<br/> <!-- Set the second tion to read "Cherry" -->
+                <input type="radio" name="Topping"/>Chocolate<br/> <!-- Set the third option to read "Chocolate" -->
+            </td>
+        </table>
+        
+        <br/><p>Notes:<p> <!-- Add subheader beneath previous selection items -->
+        
+        <!-- Create a textbox and set to appropriate size and default text-->
+        <textarea id="selbox" name="message" style="width:300px; height:75px; text-align:left">Enter any special instructions here.
+        </textarea>
+        
+        <!-- Create "Order" button -->
+        <br><button type="button" id="button">Order</button><br>
+        
+        <br/><h2>Total Orders
+        <div class="dropdown">
+            <button class="dropbtn" id="dropbtn">Jan</button>
+            <div class="dropdown-content" id="dropbtncontent">
+                <p id="Jan">Jan</p>
+                <p id="Feb">Feb</p>
+            </div>
+        </div>
+        </h2>
+        
+        <!-- Create list -->
+        <ul>
+            <li>11 Cherry</li> <!-- First list item -->
+            <li>17 Chocolate</li> <!-- Second list item -->
+            <li>31 Plain</li> <!-- Third list item -->
+        </ul>
+        
+        <br/>
         
         <script src="js/index.js">
             
         </script>
+        
+        </div>
     </body>
     
     

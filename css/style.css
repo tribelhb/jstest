@@ -1,8 +1,138 @@
-body {
-    background-color: #0080ff;
+
+/* To center the content */
+div  {
+    text-align: center;
 }
 
-h1 {
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+/* To round the edges of the cheesecake image */
+img {
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
+
+body {
+    background-color: white; /* Set the default backgorund to white */
+    /* URLs below are for the background images
+     First URL: Off-white strip in center
+     Second URL: White textured vertical strip in center
+     Third URL: Pink background */
+    background-image:
+    url(https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80),
+    url(https://images.unsplash.com/photo-1528459584353-5297db1a9c01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2575&q=80);
+    background-repeat: no-repeat; /* To prevent repetition of backgorund images */
+    background-position:  center, center; /* To center both background images */
+    background-size:  50% 100%, 100% 100%; /* Place white texture image in the center, encasing the content & pink image as main backgorund */
+}
+
+/* The following styles the main header */
+h1 {
+    color: #5b5656; /* Set color to desired gray */
+    font-family: lucida console; /* Set desired font */
+    font-size: 300%; /* Set to appropriate size */
+    text-decoration: underline; /* Underline header */
+}
+
+/* The following styles the "Total Orders Last Month" text */
+h2  {
+    color: #5b5656; /* Set color to match the rest of the text */
+    margin: 0; /* Get rid of extra space above and below text */
+}
+
+/* The following styles the "Quantity Topping" and "Notes" text */
+p  {
+    margin: 10px; /* Create appropriate amount of space above and below text */
+    color: #5b5656; /* Set color to match the rest of the text */
+    font-family: palatino; /* Set to a more "gentle" font */
+    font-size: 130%; /* Set to appropriate size (smaller than main header) */
+    text-decoration: underline; /* Underline text */
+}
+
+/* The following styles the text inside the text box */
+textarea  {
+    color: #5b5656; /* Set color of font to match the rest of text */
+    font-family: palatino; /* Set font to match other text */
+    text-align:left; /* Align default text to the left */
+}
+
+/* The following styles the radio buttons (flavor options) */
+#radioButtons {
+    color: #5b5656; /* Set color */
+    text-align:left; /* Align all options to the left */
+    padding-left: 50px; /* Create space between radio buttons and drop down menu */
+    font-family: palatino; /* Set font */
+}
+
+/* The following centers the drop down menu and radio buttons (both are contained in table) */
+#table  {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* The following styles the "Order" button */
+#button  {
+    font-family: palatino; /* Set to matching font */
+    text-align: center; /* Center the text in the button */
+    height: 20px; /* Increase height from default height */
+}
+
+/* The following styles the "Total Orders" list */
+ul  {
+    display: inline-block; /* To allow for whole list positioning */
+    color: #5b5656; /* Set to matching color */
+    text-align: center; /* Center the whole list to page */
+    list-style-position: inside; /* Center the bullets for the list */
+}
+
+/* The following styles the text of the "Total Orders" list */
+li  {
+    text-align: left; /* Align text to the left (but keep centered to page) */
+    font-family: palatino; /* Set to matching font */
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background-color: #BBBBBB;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+

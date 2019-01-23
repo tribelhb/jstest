@@ -2,7 +2,7 @@
   "name": "jstest",
   "version": "1.0.0",
   "description": "Simple test",
-  "main": "server.js",
+  "main": "js/server.js",
   "dependencies": {},
   "devDependencies": {
     "codecov": "^3.1.0",
