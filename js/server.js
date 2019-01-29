@@ -2,6 +2,7 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 
+//hi
 // Create a server
 http.createServer( function (request, response) {
                   // Parse the request containing file name
