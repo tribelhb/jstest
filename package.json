@@ -5,7 +5,7 @@
   "main": "server.js",
   "dependencies": {},
   "devDependencies": {
-    "codecov": "^3.1.0",
+    "codecov": "^3.6.5",
     "jest": "^23.6.0"
   },
   "scripts": {
