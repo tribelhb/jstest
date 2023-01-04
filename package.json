@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "codecov": "^3.1.0",
-    "jest": "^23.6.0"
+    "jest": "^29.3.1"
   },
   "scripts": {
     "test": "jest && codecov --token=6a67f096-1ad1-4614-bd5f-27d601a39e7a",
